@@ -3,7 +3,6 @@ import { countries } from "../../data/countries";
 import styles from "./Form.module.css";
 import type { SearchType } from "../../types";
 import Alert from "../Alert/Alert";
-// import { SearchType } from '../../types'; nose que pasa
 
 
 type FormProps = {
@@ -20,16 +19,15 @@ function Form({fetchWeather}: FormProps) {
   const handleChange = (e: ChangeEvent<HTMLInputElement> | ChangeEvent<HTMLSelectElement>) => {
     setBuscar({
       ...buscar,
-      [e.target.name]: e.target.value, //Parece una técnica muy avanzada
+      [e.target.name]: e.target.value,
     });
   };
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {//Validación
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    // console.log(Object.values(buscar))
 
     if (Object.values(buscar).includes('')) {
-      setAlert('Si hay campos vacíos...')
+      setAlert('Falta completar campos...')
       return
     }
 

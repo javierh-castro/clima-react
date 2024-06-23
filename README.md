@@ -1,30 +1,24 @@
-# React + TypeScript + Vite
+# Buscador de Clima en React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación que busca el clima según tu ciudad construida con React, TypeScript y Vite.
+En este proyecto también se utilizo Zod para validación y esquema de datos
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Licencia](#licencia)
 
-## Expanding the ESLint configuration
+## Instalación
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Sigue estos pasos para configurar y ejecutar el proyecto localmente.
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+# Clona el repositorio
+git clone https://github.com/javierh-castro/clima-react.git
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+# Entra en el directorio del proyecto
+cd clima-react
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Instala las dependencias
+npm install

@@ -6,12 +6,10 @@
 }
 
 .form input[type="text"], 
-.form select {/*La etiqueta select también tiene este estilo*/
+.form select {
     padding: 1rem;
     background-color: rgba(53, 53, 53, 0.5);
     border: .3rem solid var(--white);
-    
-  /* color: #000; */
     color: var(--white);
     font-size: 1.8rem;
     font-weight: 400;

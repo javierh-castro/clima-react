@@ -9,7 +9,7 @@ html {
 
 body {
   font-family: "Outfit", sans-serif;
-  background-image: url("/clima.png");
+  background-image: url("/bg_clima.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
